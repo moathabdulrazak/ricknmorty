@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+        integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <title class="font"> ricknmorty</title>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="sticky-top p-2 text-center text-light m-auto color-shift font">
+            <h4>all rick n morty!</h4>
+        </div>
+    </header>
+    <div class="row justify-content-between sticky-top container-fluid pt-3">
+        <button class=" col-1 color-shift text-light"
+            onclick="app.charctersController.showCharcters()">Charcters</button>
+        <button class="col-1 color-shift text-light" onclick="app.episodesController.showEp()">episode</button>
+    </div>
+    <main>
+        <section class="row container-fluid" id="charcter">
+            <!-- <div class="card col-3 d-flex">
+        <h3 class="text-center">name</h3>
+        <h3 class="text-center">gender</h3>
+        <img class="img-fluid" src="" alt="">
+        <h4 class="text-center">status</h4>
+        <h4 class="text-center">specice</h4>
+        <h6>type</h6>
+      </div> -->
+        </section>
+        <section class="row container-fluid" id="episode">
+            <!-- <div class="col-2 d-flex">
+                <img src="https://thiscatdoesnotexist.com/" alt="">
+                <h4>air-date</h4>
+                <h5>created</h5>
+                <h1>name</h1>
+                <h3>epoisde</h3>
+            </div> -->
+        </section>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center d-flex">
+                <!-- <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="" href="#">1</a></li> -->
+                <button class="btn btn-primary color-shift font" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight text-center">Pages!</button>
+
+                <div class="offcanvas offcanvas-end color-shift text-light" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header color-shift ">
+                        <h5 id="offcanvasRightLabel">Pages</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <li onclick="app.charctersController.getPage()" class="page-item p-2"><a
+                                    class="https://rickandmortyapi.com/api/character?page=2" href="#">2</a></li>
+                        </div>
+                        <li onclick="app.charctersController.getPage2()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">3</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage3()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">4</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage4()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">5</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage5()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">6</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage6()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">7</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage7()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">8</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage8()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">9</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage9()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">10</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage10()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">11</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage11()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">12</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage12()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">13</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage13()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">14</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage14()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">15</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage15()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">16</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage16()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">17</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage17()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">18</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage18()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">19</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage19()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">20</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage20()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">21</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage21()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">22</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage22()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">23</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage23()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">24</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage24()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">25</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage25()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">26</a></li>
+                        </li>
+                        </li>
+                        <li onclick="app.charctersController.getPage26()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">27</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage27()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">28</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage28()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">29</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage29()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">30</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage30()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">31</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage31()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">32</a></li>
+                        </li>
+                        </li>
+                        <li onclick="app.charctersController.getPage32()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">33</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage33()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">34</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage34()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">35</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage35()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">36</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage36()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">37</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage37()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">38</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage38()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">39</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage39()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">40</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage40()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">41</a></li>
+                        </li>
+                        <li onclick="app.charctersController.getPage41()" class="page-item p-2"><a
+                                class="https://rickandmortyapi.com/api/character?page=3" href="#">42</a></li>
+                        </li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+        <button onclick="app.episodesController.getEpPage()">2</button>
+        <button onclick="app.episodesController.getEpPage2()">3</button>
+
+    </main>
+    <!-- <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p><small>Made with 💖 by CodeWorks</small></p>
+    </div>
+  </footer> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+        integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+    <script src="app/App.js" type="module"></script>
+</body>
+
+</html>

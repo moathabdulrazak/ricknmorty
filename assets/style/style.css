@@ -1,0 +1,21 @@
+/* BASIC STYLES HERE */
+
+
+body {
+  background-image: url("https://www.icegif.com/wp-content/uploads/2022/06/icegif-519.gif");
+  background-position: center;
+  /* background-size: cover; */
+}
+
+
+.color-shift {
+  background-color: rgb(51 27 61 / 14%);
+  backdrop-filter: blur(40px);
+
+}
+
+.font {
+  font-family: 'Creepster', cursive;
+  color: solid #A9F3FD;
+  font-weight: bold
+}
